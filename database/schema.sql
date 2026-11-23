@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS users (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(80) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'CITIZEN',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS complaints (
+    id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(120) NOT NULL,
+    description VARCHAR(2000) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    latitude DOUBLE PRECISION NOT NULL,
+    longitude DOUBLE PRECISION NOT NULL,
+    address VARCHAR(255),
+    photo_url VARCHAR(500),
+    status VARCHAR(30) NOT NULL DEFAULT 'REPORTED',
+    priority_score INTEGER NOT NULL DEFAULT 50,
+    reporter_id BIGINT NOT NULL REFERENCES users(id),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_complaints_status ON complaints(status);
+CREATE INDEX IF NOT EXISTS idx_complaints_reporter ON complaints(reporter_id);
