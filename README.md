@@ -278,7 +278,7 @@ The project is designed with opportunities for further development:
 
 ## 👩‍💻 Developer
 
-### Anu Prabha R
+### Anu Prabha R   &    Vijay S
 
 **Computer Science and Engineering Student | Full-Stack Developer | AI Enthusiast**
 
@@ -288,9 +288,14 @@ Passionate about building practical software solutions using modern web technolo
   <a href="https://github.com/anuprabha743-cell">
     <img src="https://img.shields.io/badge/GitHub-Anu%20Prabha-181717?style=for-the-badge&logo=github" />
   </a>
+  <a>
+    <a href="https=://github.com/vijays18-dev">
+    
+  </a>
 </p>
 
-**Repository:** [CivicFix AI](https://github.com/anuprabha743-cell/CivicFix-AI) 
+**Repository:** [CivicFix AI]  
+[Anu prabha](https://github.com/anuprabha743-cell/CivicFix-AI),[Vijay.s](https://github.com/vijays18-dev)
 
 ---
 
