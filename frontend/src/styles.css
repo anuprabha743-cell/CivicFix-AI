@@ -50,7 +50,7 @@ button { cursor: pointer; }
   background: #edf3ef; border-radius: 12px; margin-bottom: 26px;
 }
 .auth-toggle button { border: 0; background: transparent; border-radius: 9px; padding: 10px; color: #728279; font-weight: 700; }
-.auth-toggle button.active { background: white; color: #1d704f; box-shadow: 0 3px 12px rgba(50,80,65,.08); }
+.auth-toggle button.active { background: #1d704f; color: white; box-shadow: 0 3px 12px rgba(29,112,79,.2); }
 .auth-card h2 { margin: 0 0 7px; font-family: 'Manrope'; font-size: 26px; }
 .auth-subtitle { margin: 0 0 24px; color: #7b8c83; font-size: 14px; }
 .auth-form { display: flex; flex-direction: column; gap: 15px; }
